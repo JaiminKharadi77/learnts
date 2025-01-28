@@ -1,4 +1,5 @@
 import "./App.css";
+import { useState } from "react";
 import Greet from "./Components/Greet";
 import Person from "./Components/Person";
 import PersonList from "./Components/PersonList";
@@ -6,8 +7,8 @@ import Status from "./Components/Status";
 import Heading from "./Components/Heading";
 import Oscar from "./Components/Oscar";
 import Button from "./Components/Button";
-import { useState } from "react";
 import Input from "./Input";
+import Container from "./Components/Container";
 
 function App() {
   let name = {
@@ -47,7 +48,7 @@ function App() {
       </Oscar>
 
       <Greet name="Jaimin" isLoggedIn={true} /> */}
-      <Button
+      {/* <Button
         handleClick={(event, id) =>
           console.log("Button is Workding", event, id)
         }
@@ -55,7 +56,10 @@ function App() {
       <Input
         value={text}
         handleChange={(event) => setText(event.target.value)}
-      />
+      /> */}
+      <Container
+        styles={{ border: "1px solid black", padding: "1rem" }}
+      ></Container>
     </>
   );
 }
