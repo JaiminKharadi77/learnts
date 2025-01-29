@@ -1,8 +1,7 @@
+import { NameType } from "./PersonProps";
+
 type PersonListProps = {
-  names: {
-    first: string;
-    last: string;
-  }[]; // that how you passed array with object
+  names: NameType[]; // that how you passed array with object
 
   numArr: number[]; // that how you passed array
 };

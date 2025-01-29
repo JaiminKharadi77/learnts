@@ -60,6 +60,8 @@ function App() {
       <Container
         styles={{ border: "1px solid black", padding: "1rem" }}
       ></Container>
+      <Person name={name} />
+      <PersonList names={nameList} numArr={[1, 2, 3, 4, 5]} />
     </>
   );
 }
