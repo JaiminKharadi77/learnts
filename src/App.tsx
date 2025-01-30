@@ -9,6 +9,7 @@ import Oscar from "./Components/Oscar";
 import Button from "./Components/Button";
 import Input from "./Input";
 import Container from "./Components/Container";
+import { LoggedIn } from "./Components/state/Loggin";
 
 function App() {
   let name = {
@@ -62,6 +63,7 @@ function App() {
       ></Container>
       <Person name={name} />
       <PersonList names={nameList} numArr={[1, 2, 3, 4, 5]} />
+      <LoggedIn />
     </>
   );
 }
