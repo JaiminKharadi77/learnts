@@ -6,7 +6,7 @@ export const LoggedIn = () => {
     setIsLoggedIn(true);
   };
   const handleLogout = () => {
-    setIsLoggedIn(0);
+    setIsLoggedIn(false);
   };
   return (
     <div>
@@ -17,7 +17,7 @@ export const LoggedIn = () => {
       <button onClick={handleLogout} className="bg-yellow-50">
         Logout
       </button>
-      <div>User is {isLoggedIn.length ? "logged in" : "logged out"}</div>
+      <div>User is {isLoggedIn? "logged in" : "logged out"}</div>
     </div>
   );
 };

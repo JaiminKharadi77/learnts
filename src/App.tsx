@@ -10,6 +10,7 @@ import Button from "./Components/Button";
 import Input from "./Input";
 import Container from "./Components/Container";
 import { LoggedIn } from "./Components/state/Loggin";
+import { User } from "./Components/state/User";
 
 function App() {
   let name = {
@@ -58,12 +59,13 @@ function App() {
         value={text}
         handleChange={(event) => setText(event.target.value)}
       /> */}
-      <Container
+      {/* <Container
         styles={{ border: "1px solid black", padding: "1rem" }}
       ></Container>
       <Person name={name} />
       <PersonList names={nameList} numArr={[1, 2, 3, 4, 5]} />
-      <LoggedIn />
+      <LoggedIn /> */}
+      <User />
     </>
   );
 }
