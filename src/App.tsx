@@ -10,7 +10,8 @@ import Button from "./Components/Button";
 import Input from "./Input";
 import Container from "./Components/Container";
 import { LoggedIn } from "./Components/state/Loggin";
-import { User } from "./Components/state/User";
+// import { User } from "./Components/state/User";
+import CoutnerReducer from "./Components/CoutnerReducer";
 
 function App() {
   let name = {
@@ -65,7 +66,8 @@ function App() {
       <Person name={name} />
       <PersonList names={nameList} numArr={[1, 2, 3, 4, 5]} />
       <LoggedIn /> */}
-      <User />
+      {/* <User /> */}
+      <CoutnerReducer />
     </>
   );
 }
