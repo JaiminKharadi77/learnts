@@ -12,6 +12,8 @@ import Container from "./Components/Container";
 import { LoggedIn } from "./Components/state/Loggin";
 // import { User } from "./Components/state/User";
 import CoutnerReducer from "./Components/CoutnerReducer";
+import { ThemeContextProvider } from "./Components/context/ThemeContext";
+import Box from "./Components/context/Box";
 
 function App() {
   let name = {
@@ -67,7 +69,11 @@ function App() {
       <PersonList names={nameList} numArr={[1, 2, 3, 4, 5]} />
       <LoggedIn /> */}
       {/* <User /> */}
-      <CoutnerReducer />
+      {/* <CoutnerReducer /> */}
+      <ThemeContextProvider>
+        <Box />
+      </ThemeContextProvider>
+      
     </>
   );
 }
